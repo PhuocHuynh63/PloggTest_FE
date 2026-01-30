@@ -1,5 +1,6 @@
 "use client";
 
+import { ROUTES } from "@routes";
 import { BadgeCheck } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -7,7 +8,7 @@ export default function ThankyouConfirmPage() {
   const router = useRouter();
 
   const handleContinue = () => {
-    router.push("/dashboard");
+    router.push(ROUTES.AUTH.LOGIN);
   };
 
   return (
